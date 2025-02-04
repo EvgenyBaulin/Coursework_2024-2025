@@ -1,0 +1,104 @@
+\section{Main chapters}
+
+\subsection{Chapter 1: Problem Statement and Theoretical Analysis of Market Shocks}
+
+\subsubsection{Purpose of the chapter:}
+
+To describe in detail the problem of modeling market shocks, justify the relevance of the study, formulate research hypotheses and determine the main parameters of the model.
+
+\subsubsection{Content:}
+
+\begin{enumerate}
+    \item Theoretical background of market shocks:
+    \begin{enumerate}
+        \item Definition of a market shock and its main characteristics (sudden change in price, liquidity, trading volume)
+        \item Review of the causes of shocks: external economic events, regulatory changes, technological failures
+        \item Analysis of the effects of shocks on financial markets based on empirical studies (see Danielsson, 2005; Brunnermeier, 2009)
+    \end{enumerate}
+    \item The relevance of modeling market shocks:
+    \begin{enumerate}
+        \item The rationale for the need for modeling to predict and prevent systemic crises.
+        \item Advantages of the agent-based approach compared to traditional economic modeling techniques (Epstein & Axtell, 1996; Tesfatsion, 2003).
+    \end{enumerate}
+    \item Formulation of research objectives:
+    \begin{enumerate}
+        \item To investigate the dynamics of the model without shocks and establish baselines.
+        \item To introduce different scenarios of market shocks followed by comparative analysis.
+        \item Conduct parametric analysis of the influence of various factors (number of traders, intensity of events) on the behavior of the system.
+    \end{enumerate}
+\end{enumerate}
+
+\subsubsection{Conclusion of the chapter:}
+
+Brief summary of the main points, formulated hypotheses and objectives of the research, preparation of ground for description of modeling methodology in the next chapter.
+
+\subsection{Chapter 2: Modeling methodology and description of the simulator}
+
+\subsubsection{Purpose of the chapter:}
+
+To present the technical and methodological background of the study, to describe the architecture of the simulator used, and to justify the choice of parameters and experiment scenarios.
+
+\subsubsection{Content:}
+
+\begin{enumerate}
+    \item Description of the simulator:
+    \begin{enumerate}
+        \item AgentBasedModel/traders.py - all traders and their parameters
+        \item AgentBasedModel/simulator.py - Simulator object and its initialization
+        \item AgentBasedModel/exchange.py - Exchange objects, assets and their initialization
+        \item AgentBasedModel/extra/events.py - what events can be triggered on the stock exchange during trading
+        \item AgentBasedModel/visualization/ - built-in visualization tools
+    \end{enumerate}
+    \item Customization of the experimental environment:
+    \begin{enumerate}
+        \item Description of the procedure for creating and setting up the environment (installing dependencies, setting up the Jupyter kernel).
+        \item Determination of initial values of model parameters and justification of their choice based on literature data (Lux & Marchesi, 1999).
+    \end{enumerate}
+    \item Experimental scenarios:
+    \begin{enumerate}
+        \item Formulation of the baseline scenario (model without exposure to shock events).
+        \item Design of experimental scenarios modeling market shocks (e.g., sudden decrease in liquidity, sudden change in demand).
+        \item Methodology of data collection and processing, and a description of the statistical techniques used (e.g. regression analysis, time series analysis).
+    \end{enumerate}
+\end{enumerate}
+
+\subsubsection{Conclusion of the chapter:}
+
+Conclusions on the feasibility of the chosen modeling approach and methodology, preparation for the experimental study.
+
+\subsection{Chapter 3: Experimental study and analysis of results}
+
+\subsubsection{Purpose of the chapter:}
+
+To conduct a series of experiments using the developed simulator, analyze the impact of market shocks on the system behavior and compare the results with theoretical expectations.
+
+\subsubsection{Content:}
+
+\begin{enumerate}
+    \item Description of the experiments:
+    \begin{enumerate}
+        \item Presentation of the basic simulation results in the absence of shock events.
+        \item Description of the experiments with the introduction of different shock scenarios:
+        \begin{enumerate}
+            \item Sudden decrease in liquidity.
+            \item A sudden increase in trading volume when the price falls.
+        \end{enumerate}
+        \item Detailed description of changes in key parameters and methodology of experiments.
+    \end{enumerate}
+    \item Data analysis:
+    \begin{enumerate}
+        \item Presentation of experimental results in the form of graphs, tables and statistical measures.
+        \item Comparison of the system behavior under the baseline scenario and scenarios with shocks.
+        \item Discussion of the identified patterns, comparing with the findings of previous studies (see Lux & Marchesi, 1999; Samanidou et al., 2007).
+    \end{enumerate}
+    \item Discussion of the results:
+    \begin{enumerate}
+        \item Interpretation of the results obtained in the context of the hypotheses posed.
+        \item Analysis of the limitations of the model and possible reasons for discrepancies with theoretical expectations.
+        \item Suggestions for further improvement of the model and research methodology.
+    \end{enumerate}
+\end{enumerate}
+
+\subsubsection{Conclusion of the chapter:}
+
+Summary conclusions on the conducted experiments, evaluation of the effectiveness of agent-based modeling for the analysis of market shocks, formulation of recommendations for further research.
